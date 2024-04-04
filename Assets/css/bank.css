@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    height: 100vh;
+    width: 100vw;
+}
+.parent{
+    height: 910px;
+    width: 100%;
+    background-color: white;
+}
+.child {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.userProfile {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+.userRecords{
+    height: 100%;   
+    width: 70%;
+    opacity: 0;
+}
+.loginPage {
+    height: 79%;
+    width: 100%;
+}
+.leftnav{
+    height: 15%;
+    width: 100%;
+}
+.leftnav img{
+    height: 140px;
+    width: 230px;
+
+}
+.loginChild {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+    justify-content: center;
+}
+.loginContent {
+    height: 90%;
+    width: 95%;
+    background-color: white;
+    border: 5px solid #dee2e6;
+    box-shadow: 0px 3px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+}
+.userForm {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formDiv {
+    height: 100%;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.SubmitBtn {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submit {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #014c92;
+    border-radius: 50px;
+    border: none;
+}
+.name, .password {
+    padding: 12px;
+    width: 84%;
+    border-style: none;
+    border-radius: 3px;
+}
+input[type="name"],[type="password"] {
+    background: #34343457;
+  }
+  /* Righ handside */
+  .rightParent{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+  }
+  .rightChild {
+    height: 90%;
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+  .rightChild2{
+    height: 100%;
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+  .transferParent{
+    height: 25%;
+    width: 100%;
+    background-color: #b5babf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  } 
+  .loanParent{
+    height: 25%;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .closeParent{
+    height: 25%;
+    width: 100%;
+    background-color: peru;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .box_size{
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+    width: 70%;
+  }
+  .tchild,.loanChild,.closeChild{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+  }
+  .btn_align{
+    width: 35%;
+    float: right;
+    padding: 3px;
+    border-style:none;
+    border-radius:5px;
+    white-space: nowrap;
+  }
+  .transation {
+    width: 100%;
+    height: 5%;
+}
+  /* transation history side */
+  .rightChild01{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+  }
+  .movementsValues {
+    border-radius: 7PX;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 90%;
+    height: 50px;
+    background-color: #8080805c;
+    padding: 10px;
+}
+.Deposit, .reduce {
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+}
+.movementsRecord {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    border: 1px solid gray;
+    box-shadow: 2px 5px 30px 0px;
+    border-radius: 9px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.movementsChild {
+    width: 100%;
+    display: contents;
+}
+.movementsStore {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 7%;
+}
+.movements {
+    height: 87%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.trans {
+    height: 100%;
+    width: 40%;
+    text-align: center;
+    background-color: green;
+    color: white;
+    border-radius: 50px;
+}
+.withdraw {
+    height: 100%;
+    width: 40%;
+    text-align: center;
+    background-color: red;
+    border-radius: 50px;
+    color: white;
+}
+.transactionBar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.in {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: self-end;
+    width: 27%;
+    height: 100%;
+}
+.out {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: self-end;
+    width: 27%;
+    height: 100%;
+}
+.logOut{
+    width: 40%;
+    
+}
+.logBtn{
+    border-style: none;
+    background-color: #b5babf;
+    height: 39px;
+    width: 75px;
+    border-radius: 5px;
+}
+.inVal {
+    width: 46px;
+    height: 20px;
+    padding: 14px;
+    color: white;
+    background-color: mediumseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.outVal {
+    width: 46px;
+    height: 20px;
+    padding: 14px;
+    color: white;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.second{
+    color: green;
+}
+
+
+
+/*TAB MEDIA QUERY */
+
+@media (min-width: 700px) and (max-width: 992px) {
+    .rightParent {
+        height: 100%;
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .rightChild2 {
+        height: 45%;
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .userProfile {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 30%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .rightChild {
+        height: 1000px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .transferParent {
+        height: 30%;
+        width: 100%;
+        background-color: #b5babf;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    .loanParent {
+        height: 23%;
+        width: 100%;
+        background-color: bisque;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    .closeParent {
+        height: 30%;
+        width: 100%;
+        background-color: peru;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    .loginPage {
+        height: 79%;
+        width: 32%;
+        display: flex;
+        align-items: center;
+        position: fixed;
+    }
+    .userRecords {
+        height: 2000px;
+        width: 65%;
+    }
+    .Deposit, .reduce {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+    }
+  }
+
+  /* MOBILE MEDIA QUERY */
+  @media (max-width: 699px) {
+
+    .loginChild {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+    .loginContent {
+        height: 100%;
+        width: 95%;
+        background-color: white;
+        border: 5px solid #dee2e6;
+        box-shadow: 0px 3px 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 5px;
+    }
+    .loginPage {
+        height: 75%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .userRecords {
+        height: 100%;
+        width: 97%;
+        opacity: 0;
+    }
+    .leftnav {
+        height: 26%;
+        width: 100%;
+    }
+    .child {
+        height: 1950px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .userProfile {
+        display: flex;
+        flex-direction: column;
+        height: 570px;
+        width: 97%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .rightParent {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .rightChild {
+        height: 100%;
+        width: 97%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .rightChild2 {
+        height: 77%;
+        width: 97%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .btn_align {
+        width: 47%;
+        float: right;
+        padding: 3px;
+        border-style: none;
+        border-radius: 5px;
+        white-space: nowrap;
+    }
+    .Deposit, .reduce {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+    }
+    .trans {
+        height: 100%;
+        width: 45%;
+        text-align: center;
+        background-color: green;
+        color: white;
+        border-radius: 50px;
+    }
+    .withdraw {
+        height: 100%;
+        width: 45%;
+        text-align: center;
+        background-color: red;
+        border-radius: 50px;
+        color: white;
+    }
+    #current_date {
+        display: none;
+    }
+    .datefor {
+        width: 50%;
+    }
+    .movementsStore {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 50px;
+    }
+  }

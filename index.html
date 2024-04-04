@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="./Assets/css/bank.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://e7.pngegg.com/pngimages/257/159/png-clipart-hdfc-logo-thumbnail-bank-logos.png">
+</head>
+<body>
+    <div class="wholeDiv">
+        <div class="parent">
+           <div class="child">
+            <div class="userProfile">
+                <div class="leftnav"><img src="https://1000logos.net/wp-content/uploads/2021/06/HDFC-Bank-logo.png" alt=""></div>
+                <!-- <div class="rightnav"> -->
+                    <div class="loginPage">
+                        <div class="loginChild">
+                            <div class="loginContent">
+                                <div class="topThings">
+                                  <h3 class="mt-3">LOGIN</h3>
+                                </div>
+                                <div class="userForm">
+                                  <div class="formDiv">
+                                    <h2>Welcome user!
+                                    </h2>
+                                    <div class="info">
+                                      <input class="text name user userInput " type="name" placeholder="User Name" id="name"> <br>
+                                      <input class="password pin userPin" type="password" placeholder="Password" id="pin">
+                                    </div>
+                                    <div class="SubmitBtn">
+                                      <button class="submit login_btn" type="submit" onclick="login()">Sign In</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div> 
+                    </div>
+                <!-- </div> -->
+            </div>
+            <div class="userRecords" id="app">
+                <div class="rightParent">
+                  <div class="rightChild">
+                    <div class="transferParent">
+                      <div class="tchild">
+                        <h5 class="mb-4 first second">Transfer money</h5>
+                        <p><input class="box_size transfer_id user_transfer" placeholder="User" type="text" id="user_transfer"></p>
+                        <p><input class="box_size transfer_amount transfer_amt" placeholder="Amount " type="number" id="outSend"></p>
+                        <p><button class="transfer btn_align btn-success transfer_btn" onclick="transfer();">Money transfer</button></p>
+                      </div>
+                    </div>
+                    <!-- request -->
+                    <div class="loanParent">
+                      <div class="loanChild">
+                        <h5 class="mb-4">Request loan</h5>
+                        <p><input class="box_size form__input loan_req getting_loan" placeholder="Amount Request" type="number" id="userReq"></p>
+                        <p><button class="request btn_align btn-warning form__btn loan_reqBtn" onclick="loan(); calculateLoan()">Loan Request</button></p>
+                        </div>
+                    </div>
+                    <!-- close -->
+                    <div class="closeParent">
+                      <div class="closeChild">
+                        <h5 class="mb-4">Close Account</h5>
+                        <p><input class="box_size close_userr" placeholder="User Name" type="text" id="userClose"></p>
+                        <p><input class="box_size close_pin" placeholder="Password" type="number" id="passClose"></p>
+                        <p><input class="btn_align btn-danger close_btn" type="button" value="Close Acc"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rightChild2 ">
+                    <div class="transation">
+                      <h2>Transaction History</h2>
+                    </div>
+                    <div class="rightChild01">
+                      <div class="transactionBar">
+                        <h5 class="balance__label">Current Transaction</h5>
+                        <p class="balance__date date"><p id="current_date"></p></p>
+                        <h3 class="balance_field "></h3>
+                      </div>
+                       
+                      <div class="movements">
+                        <div class="movementsRecord">
+                          <div class="movementsChild">
+                            <div class="movementsValues mb-3 mt-3">
+                              <div class="Deposit"> <p class="trans">Deposit</p>
+                                <p class="datefor">5 Days ago</p></div>
+                                <div><p class="currentValue">1500$</p></div>
+                            </div>
+                            <div class="movementsValues mb-3 ">
+                              <div class="reduce"> <p class="withdraw">withdraw</p>
+                                <p class="datefor">3 days ago</p></div>
+                                <div><p class="currentValue">250$</p></div>
+                            </div>
+                            <div class="movementsValues mb-3 ">
+                              <div class="reduce"> <p class="withdraw">withdraw</p>
+                                <p class="datefor">1 day ago</p></div>
+                                <div><p class="currentValue">750$</p></div>
+                            </div>
+                          </div>
+                            
+                        </div>
+                        <div class="movementsStore mt-3">
+                            <div class="in"><p class="inVal">IN</p> <p class="inAmount">0000$</p></div>
+                            <div class="out"><p class="outVal">OUT</p> <p class="outAmount">0000$</p></div>
+                            <div class="logOut "><button class="logBtn btn-dark" onclick="logout()">LogOut</button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+           </div> 
+        </div>
+    </div>
+    <script src="./Assets/js/bank.js"></script>
+</body>
+</html>
